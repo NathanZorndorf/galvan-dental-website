@@ -723,6 +723,7 @@ Common Styles
 	 package
 -------------------------------------------------------------------------------*/
 .packageList {
+    
 }
 h5 {
     font-size: 1.286em;
@@ -801,6 +802,18 @@ ul.list-default li {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
+}
+.hours-cell {
+    /* border: 1px solid blue;  */
+    text-align: center; 
+    padding: 10px 10px 10px 10px; 
+    display: inline-block; 
+    text-align: center; 
+    vertical-align: middle;
+    /*
+    min-width: 13%;
+    max-width: 15%;
+    */
 }
 
 /* ------------------------------------------------------------------------------
