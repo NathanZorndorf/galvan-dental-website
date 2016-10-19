@@ -11,7 +11,7 @@ $(document).ready(function() {
 		}
 	});
     */
-    
+
 	// Fancybox
 	$('.work-box').fancybox();
 
@@ -36,6 +36,8 @@ $(document).ready(function() {
 	    	}
 	  	});
 	});
+    
+    
     
 	nav.find('a').on('click', function () {
 	  	var $el = $(this)
