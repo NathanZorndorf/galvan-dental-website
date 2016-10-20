@@ -17,10 +17,12 @@
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-invisalign:before {
-    content: "\"}
+    content: "\";
+}
 
 .icon-mobile:before {
-  content: "\e000"; }
+  content: "\e000"; 
+}
 
 .icon-laptop:before {
   content: "\e001"; }

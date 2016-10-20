@@ -31,7 +31,7 @@
 .slides,
 .slides > li,
 .flex-control-nav,
-.flex-direction-nav {
+.flex-direction-nav {    
   margin: 0;
   padding: 0;
   list-style: none;
@@ -43,8 +43,10 @@
  * BASE STYLES
  * ====================================================================================================================*/
 .flexslider {
+    
   margin: 0;
   padding: 0;
+    
 }
 .flexslider .slides h1 {
     font-size: 125%;
@@ -62,6 +64,7 @@
   display: block;
 }
 .flexslider .slides:after {
+    padding: 0;
   content: "\0020";
   display: block;
   clear: both;
@@ -107,7 +110,8 @@ html[xmlns] .flexslider .slides {
   margin-right: 5px;
 }
 .flex-direction-nav {
-  *height: 0;
+  /* *height: 0; */
+    bottom: 30px;
 }
 .flex-direction-nav a {
   text-decoration: none;
@@ -177,7 +181,7 @@ html[xmlns] .flexslider .slides {
   z-index: 10;
   overflow: hidden;
   cursor: pointer;
-  color: #000;
+  color: #000; 
 }
 .flex-pauseplay a:before {
   font-family: "flexslider-icon";
@@ -191,39 +195,42 @@ html[xmlns] .flexslider .slides {
 .flex-pauseplay a.flex-play:before {
   content: '\f003';
 }
+/* flex-control-nav CONTROLS THE DARN NAVIGATION DOTS */
 .flex-control-nav {
   width: 50%;
-  position: absolute;
-  bottom: 100px;
+  position: relative;
+  bottom: 0px;
   right: 0;
   text-align: center;
   z-index: 100;
+    
 }
+/* CONTROLS NAVIGATION DOTS AS WELL  */
 .flex-control-nav li {
-  margin: 0 6px;
+  /* background-color: #fe827a; */
+  margin: 10px;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  /* *display: inline; */ /* wtf is this */
 }
+/* also controls the dern dots's */
 .flex-control-paging li a {
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   display: block;
-  background: #fff;
-  background: rgba(255,255,255, 0.2);
-  cursor: pointer;
-  text-indent: -9999px;
+  /* background: #555555;  */
+  background: rgba(88,88,88, 0.5);  /* why they have 2 backgrounds?? */
+  cursor: pointer; 
+  text-indent: -9999px; 
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
 .flex-control-paging li a:hover {
-  background: #fff;
-  background: rgba(255,255,255, 1);
+  background: rgba(22,22,22, 1);
 }
 .flex-control-paging li a.flex-active {
-  background: #fff;
-  background: rgba(255,255,255, 1);
+    background: rgba(22,22,22, 1);
   cursor: default;
 }
 .flex-control-thumbs {
