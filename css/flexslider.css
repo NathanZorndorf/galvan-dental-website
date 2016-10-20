@@ -197,6 +197,7 @@ html[xmlns] .flexslider .slides {
 }
 /* flex-control-nav CONTROLS THE DARN NAVIGATION DOTS */
 .flex-control-nav {
+    visibility: hidden;
   width: 50%;
   position: relative;
   bottom: 0px;
