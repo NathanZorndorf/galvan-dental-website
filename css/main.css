@@ -196,6 +196,9 @@ ul li {
     line-height: 50px;
     text-align: right;
 }
+#header .header-top-hide {
+    
+}
 #header .vertical-center-span {
     display: inline-block;
     vertical-align: middle;
@@ -206,7 +209,7 @@ ul li {
     color: #333;
     font-size: 17px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
 }
 #header .logo {
     /* border: 1px solid red; */  /* TEST */
@@ -588,19 +591,19 @@ Common Styles
 }
 
 .about-us-text {
-    color: #333333; 
-    text-align: center; 
-    font-size: 120%;
-    line-height: 175%; 
-    padding: 0 50px 0 50px; 
+    color: #888; 
+    text-align: left; 
+    letter-spacing: 0.025em;
+    font-size: 100%;
+    /* line-height: 175%; */
+    padding: 10px 10px 10px 10px;
 }
 .about-us-bottom-text {
     color: #235132; 
     text-align: center; 
     font-size: 140%;
-    line-height: 175%; 
+    line-height: 100%; 
     font-weight: 500;
-    padding: 0 90px 0 90px; 
 }
 .profile-bg {
     background-color: transparent;
@@ -825,8 +828,9 @@ ul.list-default li {
 /* ------------------------------------------------------------------------------
 	 Teams
 -------------------------------------------------------------------------------*/
+
 .person {
-	max-width: 270px;
+	/* max-width: 270px; */
 	text-align: center;
 }
 .person img {
@@ -845,6 +849,10 @@ ul.list-default li {
 	font-weight: 600;
 	margin-bottom: 20px;
 	text-align: center;
+}
+.person p {
+    text-align: left;
+    letter-spacing: 0.05em; /* ABOUT us text is 0em*/
 }
 .social-icons, .footer .footer-share {
 	
@@ -1005,9 +1013,22 @@ ul.list-default li {
 	position:absolute; 
     width: 100%;
 }
+/*
 .col-centered{
     float: none;
     margin: 0 auto;
+}
+*/
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+/*    float:none;*/
+    text-align:left; /* reset the text-align */
+    margin-right:-4px; /* inline-block space fix */
 }
 
 /* ------------------------------------------------------------------------------
