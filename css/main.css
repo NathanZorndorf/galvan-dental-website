@@ -535,8 +535,10 @@ Common Styles
 -------------------------------------------------------------------------------*/
 .service-section-background {    
     
-    background-image: url(../images/background_textures/cool-white-background-23.jpg); 
+    /*background-image: url(../images/background_textures/cool-white-background-23.jpg); */
+    background-image: url(../images/background_textures/cool-white-background-23.jpg);
     background-size: cover;
+    /* background-position: center; */
     
     /*
     background-image: url(../images/background_textures/eight_horns.png);
