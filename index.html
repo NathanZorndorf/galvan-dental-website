@@ -19,6 +19,8 @@
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/font-icon.css">
 <link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/animations.css"> 
+<link rel="stylesheet" href="css/animations-ie-fix.css"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
@@ -80,7 +82,7 @@
         
         <div class="section-header">
             <!-- <h2 class="wow fadeInDown animated">Our Services</h2> -->
-            <h2 class="animated fadeInRight">About Us</h2>
+            <h2 id="element-to-animate-about-right" class="animated">About Us</h2>
             <!-- <p style="text-align:center;">Please see our service page for more information.</p> --> 
         </div>
         
@@ -100,7 +102,7 @@
                 
                 <span style="display: inline-block; vertical-align: middle; line-height: normal;">                                        
                     
-                    <p class="about-us-text animated fadeInLeft">
+                    <p id="element-to-animate-about-left" class="about-us-text animated">
                         <span style="font-size: 22px; color: #333; letter-spacing: 0em;">Galvan Dental Care</span> &nbsp;has been providing quality dental care to the Vallejo  area since 2006. Our doctors believe that being a part of a community means being able to be of service to its people.  At Galvan Dental Care, we strive to provide the best service to our patients by providing excellent dental care, imparting relevant patient education and employing an able team of caring staff. 
                         <br>
                         <br> 
@@ -115,7 +117,7 @@
             </div>
             
 
-            <div class="col-xs-12 animated fadeInRight" style="padding: 15px 0;">
+            <div id="element-to-animate-about-up" class="col-xs-12 animated" style="padding: 15px 0;">
                 
                 <img src="images/galvan_dental_pictures/dr-felipe-galvan.jpg" style="width: 350px; height: 232px; margin: 5px 0; max-width: 100%;"> <!-- aspect ratio: 15-->
                 
@@ -128,7 +130,7 @@
         
         <div class="row row-centered">
             
-            <div class="col-xs-12" style="padding: 10px 0; text-align: center;">
+            <div id="element-to-animate-about-up-2" class="col-xs-12 animated" style="padding: 10px 0; text-align: center;">
                 
                 <span class="about-us-bottom-text">"We create healthy smiles!"</span>
                 
@@ -163,18 +165,18 @@
        
         <div class="row">
 
-          <div class="col-md-4 col-sm-6 services text-center"> 
+          <div id="element-to-animate-services-up-1" class="col-md-4 col-sm-6 services text-center animated"> 
                <span class="icon"><img src="images/icons_png/medical-2.png"></span>
 
 
               <div class="services-content">
-              <h5>Invisalign Teeth Braces</h5> 
+              <h5 id="element-to-animate" class="animated">Invisalign Teeth Braces</h5> 
                   <br>
               <p style="color: #222;">Invisalign is the invisible way for adults and teens to straighten their teeth and correct dental problems such as overbites. With none of the inconveniences of traditional silver braces, it’s hard to believe that Invisalign costs about the same!</p>
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 services text-center"> 
+          <div id="element-to-animate-services-up-2" class="col-md-4 col-sm-6 services text-center animated"> 
               <span class="icon"><img src="images/icons_png/medical-1.png"></span>
             
               <div class="services-content">
@@ -184,7 +186,7 @@
               </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 services text-center"> 
+          <div id="element-to-animate-services-up-3" class="col-md-4 col-sm-6 services text-center animated"> 
               <span class="icon"><img src="images/icons_png/medical.png"></span>
               
             <div class="services-content">
@@ -213,16 +215,88 @@
   </div>
 </section>
     
+<!-- DOCTORS -->
+<section class="section section-padding-bottom">
+    
+    <div class="container">
+        
+      <div id="element-to-animate-doctors-down" class="section-header animated">
+            <h2>Meet Our Team</h2>
+      </div>
+    
+      <div class="row row-centered" >
+          
+          <div id="element-to-animate-doctors-up-1" class="col-xs-12 col-sm-4 col-centered animated">
+              
+            <div class="person">
+                
+                <img src="images/galvan_dental_pictures/dr-felipe-galvan.JPG" alt="" class="img-responsive" style="width: 100%;">
+                
+              <div class="person-content">
+                  
+                <h4>Dr. Felipe H. Galvan, Jr.<br>D.D.S</h4>
+                <h5 class="role">Primary Dentist</h5>
+                <p>Dr. Felipe Galvan has been providing excellent dental care to his members of his community for over 19 years.  Dr. Felipe Galvan, a third generation dentist, graduated from Centro Escolar University in Manila, Philippines in 1992, and afterwards attended Loma Linda University and UCLA. Dr. Galvan constantly enriches his dental expertise through regular continuing medical education and peer exchange to serve his patients using the latest dental technology and techniques.</p>
+                  
+              </div>
+                
+            </div> 
+              
+          </div> 
+          
+          <div id="element-to-animate-doctors-up-2" class="col-xs-12 col-sm-4 col-centered animated">
+              
+            <div class="person">
+                
+                <img src="images/galvan_dental_pictures/jaydee-rda.jpg" alt="" class="img-responsive" style="width: 100%;">
+                
+              <div class="person-content">
+                  
+                <h4>Leia Quesada<br>R.D.A.</h4>
+                <h5 class="role">Back Office Manager</h5>
+                <p>Leia is our Back Office Manager. With over 5 years of dental assisting experience, she is constantly looking for more effective ways to improve patient care and is always eager to share her knowledge with her patients. Like Dr. Philip, she is thorough, in both her techniques and patient education.  Leia's combined skill and cheerful personality will leave you feeling pampered and at ease during your dental visit.</p>
+                  
+              </div> 
+                
+            </div> 
+              
+          </div>
+          
+          <div id="element-to-animate-doctors-up-3" class="col-xs-12 col-sm-4 col-centered animated">
+              
+            <div class="person">
+                
+                <img src="images/galvan_dental_pictures/jesse-rda.jpg" alt="" class="img-responsive" style="width: 100%;">
+                
+              <div class="person-content">
+                  
+                <h4>Kristine Garcia<br>R.D.A.</h4>
+                <h5 class="role">Front Office Manager</h5>
+                <p>Kristine is our Front Office Manager.  Her knowledge in the dental insurance field comes from years of working in the nation’s largest dental insurance company.  With her professionalism you can be assured that she will explain your benefits and coverage as well as your treatment plan in a comprehensive and understandable manner.  Approachable and knowledgeable, that is what our patients appreciate about her.</p>
+                  
+              </div> 
+                
+            </div> 
+              
+          </div> 
+                              
+        </div> 
+      
+    </div> 
+    
+</section>
+
 <!-- GALLERY -->
 <section id="gallery" class="gallery section section-padding-bottom">
+    
   <div class="container">
       
     <div class="section-header">
-                <h2 class="wow fadeInDown animated">Gallery</h2>
-                <p class="wow fadeInDown animated"></p>
+                <h2>Gallery</h2>
+                <!-- <p class="wow fadeInDown animated"></p> -->
     </div>
       
-    <div class="row no-gutter" style="height: 200px;">
+    <div class="row no-gutter">
         
       <div class="col-lg-3 col-md-6 col-sm-6 work"> 
           
@@ -272,75 +346,7 @@
     </div>
   </div>
 </section>
-    
-<!-- DOCTORS -->
-<section id="teams" class="section section-padding-bottom">
-  <div class="container">
-        
-      <div class="section-header">
-            <h2>Meet Our Team</h2>
-      </div>
-    
-      <div class="row row-centered">
-          
-          <div class="col-xs-12 col-sm-4 col-centered">
-              
-            <div class="person">
-                
-                <img src="images/galvan_dental_pictures/dr-felipe-galvan.JPG" alt="" class="img-responsive" style="width: 100%;">
-                
-              <div class="person-content">
-                  
-                <h4>Dr. Felipe H. Galvan, Jr.<br>D.D.S</h4>
-                <h5 class="role">Primary Dentist</h5>
-                <p>Dr. Felipe Galvan has been providing excellent dental care to his members of his community for over 19 years.  Dr. Felipe Galvan, a third generation dentist, graduated from Centro Escolar University in Manila, Philippines in 1992, and afterwards attended Loma Linda University and UCLA. Dr. Galvan constantly enriches his dental expertise through regular continuing medical education and peer exchange to serve his patients using the latest dental technology and techniques.</p>
-                  
-              </div> <!-- person content -->
-                
-            </div> <!-- person -->
-              
-          </div> <!-- col -->
-          
-          <div class="col-xs-12 col-sm-4 col-centered">
-              
-            <div class="person">
-                
-                <img src="images/galvan_dental_pictures/jaydee-rda.jpg" alt="" class="img-responsive" style="width: 100%;">
-                
-              <div class="person-content">
-                  
-                <h4>Leia Quesada<br>R.D.A.</h4>
-                <h5 class="role">Back Office Manager</h5>
-                <p>Leia is our Back Office Manager. With over 5 years of dental assisting experience, she is constantly looking for more effective ways to improve patient care and is always eager to share her knowledge with her patients. Like Dr. Philip, she is thorough, in both her techniques and patient education.  Leia's combined skill and cheerful personality will leave you feeling pampered and at ease during your dental visit.</p>
-                  
-              </div> <!-- person content -->
-                
-            </div> <!-- person -->
-              
-          </div> <!-- col -->
-          
-          <div class="col-xs-12 col-sm-4 col-centered">
-              
-            <div class="person">
-                
-                <img src="images/galvan_dental_pictures/jesse-rda.jpg" alt="" class="img-responsive" style="width: 100%;">
-                
-              <div class="person-content">
-                  
-                <h4>Kristine Garcia<br>R.D.A.</h4>
-                <h5 class="role">Front Office Manager</h5>
-                <p>Kristine is our Front Office Manager.  Her knowledge in the dental insurance field comes from years of working in the nation’s largest dental insurance company.  With her professionalism you can be assured that she will explain your benefits and coverage as well as your treatment plan in a comprehensive and understandable manner.  Approachable and knowledgeable, that is what our patients appreciate about her.</p>
-                  
-              </div> <!-- person content -->
-                
-            </div> <!-- person -->
-              
-          </div> <!-- col -->
-                              
-    </div>
-  </div>
-</section>
-
+       
 <!-- TESTIMONIALS -->
 <section id="testimonials" class="testimonials light-yellow-background">
   <div class="container-fluid rowWithFullWidth">
@@ -395,7 +401,7 @@
         
   </div>
 </section>
-    
+      
 <!-- HOURS & LOCATION -->
 <section id="package" class="section-padding-bottom">
   
@@ -557,5 +563,7 @@
 <script src="js/modernizr.js"></script> 
 <script src="js/main.js"></script> 
 <script type="text/javascript" src="js/jquery.contact.js"></script> 
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/css3-animate-it.js"></script>    
 </body>
 </html>
