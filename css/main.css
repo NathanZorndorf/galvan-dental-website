@@ -658,9 +658,9 @@ Common Styles
 	overflow: hidden;
 	position: relative;
 }
-.work img {
+.work img {    
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 .work .overlay {
 	background: rgba(43, 153, 228, 0.88);
@@ -959,10 +959,10 @@ ul.list-default li {
 }
 .conForm .submitBnt {
 	/* background: #b3e1d2; */
-    border: 2px solid #639172;
-    border-radius: 2px;
+    /* border: 2px solid #639172; */
+    border: 2px solid #2b99e4;
     background: white;
-    color: #336142;
+    color: #2b99e4;
     
     /* border: 0; */
 	-moz-border-radius: 2px;
@@ -978,8 +978,8 @@ ul.list-default li {
 	text-transform: uppercase;
 }
 .conForm .submitBnt:hover {
-	background: #a3d1c2;
-	color: #336142;
+	background: #bbdff6;
+	color: #0b79c4;
 }
 #success_page{
 	color: #00bdbd;
