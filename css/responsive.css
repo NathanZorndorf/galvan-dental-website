@@ -26,9 +26,15 @@
  z-index: 99999;
  visibility: hidden;
  opacity: 0;
- -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
- transition: opacity 0.5s, visibility 0s 0.5s;
+     /* controls transition time of menu when it closes */
+ -webkit-transition: opacity 0.0s, visibility 0s 0.0s;
+ transition: opacity 0.0s, visibility 0s 0.0s;
 }
+
+.primary-nav{
+    margin-bottom: 40px;
+}
+    
  .navigation .primary-nav {
      background: #ffeecc;
      position: relative;
@@ -47,13 +53,14 @@
  display: block;
  margin-bottom: 1px;
 }
+/* controls TEXT when navigation bar is open on mobile */
  .navigation a {
  display: block;
  font-size: 18px;
  margin: 0;
  text-align: center;
- padding: 17px 0;
- color: #fff;
+ padding: 14px 0;
+ color: #000;
 }
  .person {
  /* margin: 0 auto 50px; */

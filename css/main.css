@@ -286,6 +286,13 @@ ul li {
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 }
+/* maybe this is where we can add css for the navigation box when its open */
+/*
+.navigation.open a.active {
+    background: #888;
+}
+*/
+
 .navigation-div {
     position: relative;
     /* border: 1px solid red; */ /*TEST */
@@ -321,24 +328,32 @@ ul li {
     /* color: #b3e1d2 !important; */
     color: #ffef99 !important;
 }
+
 .nav-toggle {
-	display: none;
-	height: 44px;
-	overflow: hidden;
-	position: fixed;
-	right: 5%;
-	text-indent: 100%;
-	top: 18px;
-	white-space: nowrap;
-	width: 44px;
+    /* -- This style makes the menu toggle button position correctly */
+    position: absolute;
+    float: right;
+    right: -10px;
+    top: 20px;
+    height: 44px;
+    width: 44px;
+    
+	/* position: fixed; */
+	/* right: 5%; */
+	
 	z-index: 99999;
-	-moz-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	background: transparent;
+	-moz-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	transition: all 0.1s;
+	background: transparent;        
+    text-indent: 100%;
+	white-space: nowrap;
+    overflow: hidden;
+    display: none;
 }
 .nav-toggle:before, .nav-toggle:after {
+    
 	border-radius: 50%;
 	content: "";
 	height: 100%;
@@ -346,6 +361,7 @@ ul li {
 	position: absolute;
 	top: 0;
 	width: 100%;
+    
 	-moz-transform: translateZ(0);
 	-ms-transform: translateZ(0);
 	-webkit-transform: translateZ(0);
@@ -370,6 +386,13 @@ ul li {
 	color: #f05da3;
 }
 .nav-toggle:after {
+    position: relative;
+    float: right;
+    right: -10px;
+    top: 15px;
+    height: 44px;
+    width: 44px;
+    
 	background-color: transparent;
 	-moz-transform: scale(0);
 	-ms-transform: scale(0);
@@ -397,7 +420,7 @@ ul li {
 	transform: translateX(-50%) translateY(-50%);
 }
 .nav-toggle span:before, .nav-toggle span:after {
-	background-color: #000;
+	background-color: #f6f6f6;
 	content: "";
 	height: 100%;
 	position: absolute;
@@ -591,7 +614,8 @@ Common Styles
 }
 
 #gallery{ 
-	background: #efefef;
+	/* background: #efefef; */
+    background: #f6f6f6;
 }
 /*==================================================
 	ABOUT / section-profile
