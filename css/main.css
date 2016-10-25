@@ -50,15 +50,19 @@ h5 {
 	margin-top: 20px;
 }
 .btn:hover, .btn:focus {
-	background-color: #ffff99;
-	color: black;
+	/* background-color: #ffff99;
+	color: black; */
+    background-color: #bbdff6;
+    color: #0b79c4;
 }
 .btn-large {
 	padding: 15px 40px;
-    color: black;
-	border: none;
-	border: 1px solid #afaf9c;
-    background-color: #ffffcc;
+    color: #2b99e4;    
+    background: #fff;
+    border: 2px dashed #2b99e4;
+    border-radius: 10px;
+	/*border: 1px solid #afaf9c;
+    background-color: #ffffcc; */
 	/*background: transparent;*/ 
 }
 #map-overlay {
@@ -620,6 +624,26 @@ Common Styles
     -webkit-animation-delay: 0.4s;
     -o-animation-delay: 0.4s;
 }
+#element-to-animate-services-up-4 {
+    -moz-animation-delay: 0.0s;
+    -webkit-animation-delay: 0.0s;
+    -o-animation-delay: 0.0s;
+}
+#element-to-animate-services-up-5 {
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+}
+#element-to-animate-services-up-6 {
+    -moz-animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+}
+#element-to-animate-services-up-7 {
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+}
 
 #gallery{ 
 	/* background: #efefef; */
@@ -923,11 +947,26 @@ ul.list-default li {
 }
 
 #element-to-animate-doctors-up-2 {
+    -moz-animation-delay: 0.0s;
+    -webkit-animation-delay: 0.0s;
+    -o-animation-delay: 0.0s;
+}
+#element-to-animate-doctors-up-3 {
     -moz-animation-delay: 0.2s;
     -webkit-animation-delay: 0.2s;
     -o-animation-delay: 0.2s;
 }
-#element-to-animate-doctors-up-3 {
+#element-to-animate-doctors-up-4 {
+    -moz-animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+}
+#element-to-animate-doctors-up-5 {
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+}
+#element-to-animate-doctors-up-6 {
     -moz-animation-delay: 0.4s;
     -webkit-animation-delay: 0.4s;
     -o-animation-delay: 0.4s;

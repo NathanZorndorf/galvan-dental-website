@@ -41,6 +41,26 @@ $(document).ready(function() {
         $('#element-to-animate-services-up-3').addClass('fadeInUp');                       
     }, {offset: '100%'});
 
+    $("#element-to-animate-services-up-4").waypoint(function() 
+    {                                             
+        $('#element-to-animate-services-up-4').addClass('fadeInUp');                       
+    }, {offset: '100%'});
+    
+    $("#element-to-animate-services-up-5").waypoint(function() 
+    {                                             
+        $('#element-to-animate-services-up-5').addClass('fadeInUp');                       
+    }, {offset: '100%'});
+    
+    $("#element-to-animate-services-up-6").waypoint(function() 
+    {                                             
+        $('#element-to-animate-services-up-6').addClass('fadeInUp');                       
+    }, {offset: '100%'});
+    
+    $("#element-to-animate-services-up-7").waypoint(function() 
+    {                                             
+        $('#element-to-animate-services-up-7').addClass('fadeInUp');                       
+    }, {offset: '100%'});    
+    
     // DOCTORS
     $("#element-to-animate-doctors-up-1").waypoint(function() 
     {                                             
@@ -56,6 +76,18 @@ $(document).ready(function() {
     {                                             
         $('#element-to-animate-doctors-up-3').addClass('fadeInUp');                       
     }, {offset: '100%'});
+    $("#element-to-animate-doctors-up-4").waypoint(function() 
+    {                                             
+        $('#element-to-animate-doctors-up-4').addClass('fadeInUp');                       
+    }, {offset: '100%'});
+    $("#element-to-animate-doctors-up-5").waypoint(function() 
+    {                                             
+        $('#element-to-animate-doctors-up-5').addClass('fadeInUp');                       
+    }, {offset: '100%'});
+    $("#element-to-animate-doctors-up-6").waypoint(function() 
+    {                                             
+        $('#element-to-animate-doctors-up-6').addClass('fadeInUp');                       
+    }, {offset: '100%'});    
 
     $("#element-to-animate-doctors-up").waypoint(function() 
     {                                             

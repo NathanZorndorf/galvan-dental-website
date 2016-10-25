@@ -1,14 +1,17 @@
 /* WHYYYY I had to add this so that I could change the position of the navigation dots */
 @media screen and (max-width: 3000px) {
- .flex-control-nav {
-     bottom: 150px;
-} 
-    
-.banner-text h1 {
-    font-size: 42px;
-    top: 500px;
-    left: 60px;
-}
+     .flex-control-nav {
+         bottom: 150px;
+    } 
+
+    .banner-text h2 {
+        top: 418px; left: 60px;
+    }
+    .banner-text h1 {
+        font-size: 42px;
+        top: 500px;
+        left: 60px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -18,6 +21,9 @@
 }
  #header.fixed a {
  color: #353535;
+}
+.banner-text h2 {        
+    top: 418px; left: 60px;
 }
 .banner-text h1 {
     font-size: 42px;
@@ -94,8 +100,10 @@
 }
 }
 
-
 @media screen and (max-width: 915px) { 
+    .banner-text h2 {        
+        top: 330px;
+    }
     .banner-text h1 {    
     font-size: 42px;
     top: 400px;
@@ -110,6 +118,9 @@
 }
  .banner-text {
  padding-top: 30%;
+}
+.banner-text h2 {
+    visibility: hidden;
 }
 .banner-text h1 {
     font-size: 36px;
