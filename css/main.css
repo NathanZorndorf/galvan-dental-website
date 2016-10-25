@@ -109,7 +109,7 @@ hr.style-gradient {
 	Global Styles
 -------------------------------------------------------------------------------*/
 a {
-	color: #e84545;
+	color: #1b89d4;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -611,8 +611,13 @@ Common Styles
     height: 100px;
     width: 100px;
 }
+/*
 .services .icon:hover {
     background: #d2e9f9
+}
+*/
+.services:hover .icon{
+    background: #d2e9f9;
 }
 #element-to-animate-services-up-2 {
     -moz-animation-delay: 0.2s;

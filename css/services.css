@@ -1,0 +1,7 @@
+.services .icon:hover {
+    background: #fff;
+}
+
+.services:hover .icon{
+    background: #fff;
+}
