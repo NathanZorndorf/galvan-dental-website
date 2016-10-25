@@ -286,12 +286,13 @@ ul li {
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 }
+
 /* maybe this is where we can add css for the navigation box when its open */
-/*
-.navigation.open a.active {
-    background: #888;
+.navigation.open a.active, .navigation.open a:hover {
+   background: #888; 
 }
-*/
+
+
 
 .navigation-div {
     position: relative;
@@ -323,11 +324,13 @@ ul li {
     margin-right: 10px;
 	text-transform: uppercase;
 }
-.navigation a:hover, .navigation a.active {
-	 /* color: #ccbf5f !important; */
-    /* color: #b3e1d2 !important; */
+.navigation a:hover {
     color: #ffef99 !important;
 }
+.navigation a.active {
+    color: #ffef99 !important;
+}
+
 
 .nav-toggle {
     /* -- This style makes the menu toggle button position correctly */
@@ -420,7 +423,7 @@ ul li {
 	transform: translateX(-50%) translateY(-50%);
 }
 .nav-toggle span:before, .nav-toggle span:after {
-	background-color: #f6f6f6;
+	background-color: #f6f6f6; 
 	content: "";
 	height: 100%;
 	position: absolute;
@@ -502,11 +505,12 @@ ul li {
 }
 
 .banner-text h1 {
-	color: #5f5f5f;
+	/* color: #5f5f5f; */
+    position: absolute;
+    color: #2b99e4;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 36px;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 .banner-text h1 span{
 	color: #b4e3cd;

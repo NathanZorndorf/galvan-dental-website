@@ -2,8 +2,6 @@ $(document).ready(function() {
     // jQuery animations on page scroll    
     /*
     $('#element-to-animate-left').css('opacity', 0); // Have the element start out invisible 
-    $('#element-to-animate-right').css('opacity', 0); // Have the element start out invisible 
-    $('#element-to-animate-up').css('opacity', 0); // Have the element start out invisible 
     */
     
     // ABOUT
@@ -64,34 +62,6 @@ $(document).ready(function() {
         $('#element-to-animate-doctors-up').addClass('fadeInUp');                       
     }, {offset: '100%'});
     
-    
-    /*
-    var $animation_elements = $('.animation-element');
-    var $window = $(window);
-    
-    $window.on('scroll', check_if_in_view);
-    $window.on('scroll resize', check_if_in_view);
-    $window.trigger('scroll');
-    
-    function check_if_in_view() {
-        var window_height = $window.height();
-        var window_top_position = $window.scrollTop();
-        var window_bottom_position = (window_top_position + window_height);
-        
-        $.each($animation_elements, function() {
-            var $element = $(this);
-            var element_height = $element.outerHeight();
-            var element_top_position = $element.offset().top;
-            var element_bottom_position = (element_top_position + element_height);
-            
-            //check to see if the current container is in the viewport 
-            if((element_bottom_position >= window_top_position) &&
-               (element_top_position <= window_bottom_position) {
-                    $element.addClass('.in-view');
-            }                          
-        });
-    }
-    */
     
     // Header Scroll
     /*
@@ -154,14 +124,19 @@ $(document).ready(function() {
     
 	// Mobile Navigation
 	$('.nav-toggle').on('click', function() {
-		$(this).toggleClass('close-nav');
-		nav.toggleClass('open');
+        nav.toggleClass('open');
+		$(this).toggleClass('close-nav');        
 		return false;
 	});	
     // when a link is clicked, close nav bar 
 	nav.find('a').on('click', function() {
-		$('.nav-toggle').toggleClass('close-nav');
-		nav.toggleClass('open');
+        // only do this if we are in mobile mode (the nav menu is in place...)
+        if($('nav.navigation').hasClass('open')) 
+        {
+            console.log('stuff');
+            nav.toggleClass('open');   
+            $('.nav-toggle').toggleClass('close-nav');            
+        }
 	});
     
 });
