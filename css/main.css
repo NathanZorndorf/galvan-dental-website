@@ -592,7 +592,8 @@ Common Styles
 	font-weight: 600;
 	/* display: table-cell; */
     display: inline-block; /* inline-block makes the span and the div stack vertically. */
-	border: #82c434 dotted 2px;
+	/* border: #82c434 dotted 2px; */
+    border: #2b99e4 dotted 2px;
 }
 .services h5 {
     text-align:center;
@@ -605,6 +606,9 @@ Common Styles
 .services img{
     height: 100px;
     width: 100px;
+}
+.services .icon:hover {
+    background: #d2e9f9
 }
 #element-to-animate-services-up-2 {
     -moz-animation-delay: 0.2s;
@@ -638,7 +642,8 @@ Common Styles
     padding: 10px 10px 10px 10px;
 }
 .about-us-bottom-text {
-    color: #235132; 
+    /* color: #235132; */
+    color: #2b99e4;
     text-align: center; 
     font-size: 140%;
     line-height: 100%; 
