@@ -156,21 +156,35 @@
  .testimonials p {
  font-size: 12px;
 }
+.footer-text-top.footer-slogan {    
+    letter-spacing: 0.15em; 
+}
+}
 @media screen and (max-width: 480px) {
  .banner-text {
  padding-top: 45%;
 }
  .banner-text h1 {
     font-size: 20px;
-    top: 180px;
-    left: 40px;
+    top: 170px;
+    left: 20px;
 }
  .testimonials p {
  font-size: 12px;
 }
+.footer-text-top.footer-slogan {
+    letter-spacing: 0.1em;
+    line-height: 10px;
+}    
+}
 @media screen and (max-width: 320px) {
  .banner-text {
  padding-top: 55%;
+}
+ .banner-text h1 {
+    font-size: 20px;
+    top: 170px;
+    left: 20px;
 }
  .testimonials blockquote {
  padding: 20px 5% 0;
@@ -178,4 +192,11 @@
  .testimonials p {
  font-size: 12px;
 }
+.footer-text-top {
+    font-size: 18px;
+}  
+    .footer-text-top.footer-email {
+        font-size: 16px;
+    }
 }
+

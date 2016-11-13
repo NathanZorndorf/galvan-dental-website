@@ -1,5 +1,6 @@
 <?php
 
+
 if(!$_POST) exit;
 
 // Email address verification, do not edit.
@@ -40,7 +41,7 @@ if(get_magic_quotes_gpc()) {
 
 //$address = "example@example.net";
 //$address = "sam.infos@gmail.com";
-$address = "nzorndorf@gmail.com";
+$address = "Galvandentalcare@gmail.com";
 
 
 // Configuration option.
@@ -70,7 +71,8 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 if(mail($address, $e_subject, $msg, $headers)) {
 
 	// Email has sent successfully, echo a success page.
-
+    
+    @mail($email, $e_subject, $msg, $headers);  
 	echo "<fieldset>";
 	echo "<div id='success_page'>";
 	echo "<h3>Email Sent Successfully.</h3>";

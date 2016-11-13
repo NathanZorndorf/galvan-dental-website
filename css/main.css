@@ -1069,6 +1069,7 @@ ul.list-default li {
 	border-radius: 3px;
     
 	margin-top: 30px;
+    margin: 15px auto;
 	padding:15px 30px 15px 30px;
 	font-size: 13px;
 	font-weight: 600;

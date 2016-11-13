@@ -4,95 +4,101 @@ $(document).ready(function() {
     $('#element-to-animate-left').css('opacity', 0); // Have the element start out invisible 
     */
     
+    // device detection
+    var isMobile = window.matchMedia("screen and (max-width: 760px)");
+    console.log('isMobile = ' + isMobile.matches);
+    
     // ABOUT
-    $("#element-to-animate-about-left").waypoint(function() 
-    {                
-        $('#element-to-animate-about-left').addClass('fadeInLeft');                        
-    }, {offset: '100%'});
-    
-    $("#element-to-animate-about-right").waypoint(function() 
-    {                      
-        $('#element-to-animate-about-right').addClass('fadeInRight');              
-    }, {offset: '100%'});
-    
-    $("#element-to-animate-about-up").waypoint(function() 
-    {                                             
-        $('#element-to-animate-about-up').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    
-    $("#element-to-animate-about-up-2").waypoint(function() 
-    {                                             
-        $('#element-to-animate-about-up-2').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    
-    // SERVICES
-    $("#element-to-animate-services-up-1").waypoint(function() 
-    {                                             
-        $('#element-to-animate-services-up-1').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    
-    $("#element-to-animate-services-up-2").waypoint(function() 
-    {                                             
-        $('#element-to-animate-services-up-2').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    
-    $("#element-to-animate-services-up-3").waypoint(function() 
-    {                                             
-        $('#element-to-animate-services-up-3').addClass('fadeInUp');                       
-    }, {offset: '100%'});
+    if(isMobile = false) {
+        $("#element-to-animate-about-left").waypoint(function() 
+        {                
+            $('#element-to-animate-about-left').addClass('fadeInLeft');                        
+        }, {offset: '100%'});
 
-    $("#element-to-animate-services-up-4").waypoint(function() 
-    {                                             
-        $('#element-to-animate-services-up-4').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    
-    $("#element-to-animate-services-up-5").waypoint(function() 
-    {                                             
-        $('#element-to-animate-services-up-5').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    
-    $("#element-to-animate-services-up-6").waypoint(function() 
-    {                                             
-        $('#element-to-animate-services-up-6').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    
-    $("#element-to-animate-services-up-7").waypoint(function() 
-    {                                             
-        $('#element-to-animate-services-up-7').addClass('fadeInUp');                       
-    }, {offset: '100%'});    
-    
-    // DOCTORS
-    $("#element-to-animate-doctors-up-1").waypoint(function() 
-    {                                             
-        $('#element-to-animate-doctors-up-1').addClass('fadeInUp');                       
-    }, {offset: '100%'});
+        $("#element-to-animate-about-right").waypoint(function() 
+        {                      
+            $('#element-to-animate-about-right').addClass('fadeInRight');              
+        }, {offset: '100%'});
 
-    $("#element-to-animate-doctors-up-2").waypoint(function() 
-    {                                             
-        $('#element-to-animate-doctors-up-2').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    
-    $("#element-to-animate-doctors-up-3").waypoint(function() 
-    {                                             
-        $('#element-to-animate-doctors-up-3').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    $("#element-to-animate-doctors-up-4").waypoint(function() 
-    {                                             
-        $('#element-to-animate-doctors-up-4').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    $("#element-to-animate-doctors-up-5").waypoint(function() 
-    {                                             
-        $('#element-to-animate-doctors-up-5').addClass('fadeInUp');                       
-    }, {offset: '100%'});
-    $("#element-to-animate-doctors-up-6").waypoint(function() 
-    {                                             
-        $('#element-to-animate-doctors-up-6').addClass('fadeInUp');                       
-    }, {offset: '100%'});    
+        $("#element-to-animate-about-up").waypoint(function() 
+        {                                             
+            $('#element-to-animate-about-up').addClass('fadeInUp');                       
+        }, {offset: '100%'});
 
-    $("#element-to-animate-doctors-up").waypoint(function() 
-    {                                             
-        $('#element-to-animate-doctors-up').addClass('fadeInUp');                       
-    }, {offset: '100%'});
+        $("#element-to-animate-about-up-2").waypoint(function() 
+        {                                             
+            $('#element-to-animate-about-up-2').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+
+        // SERVICES
+        $("#element-to-animate-services-up-1").waypoint(function() 
+        {                                             
+            $('#element-to-animate-services-up-1').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+
+        $("#element-to-animate-services-up-2").waypoint(function() 
+        {                                             
+            $('#element-to-animate-services-up-2').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+
+        $("#element-to-animate-services-up-3").waypoint(function() 
+        {                                             
+            $('#element-to-animate-services-up-3').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+
+        $("#element-to-animate-services-up-4").waypoint(function() 
+        {                                             
+            $('#element-to-animate-services-up-4').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+
+        $("#element-to-animate-services-up-5").waypoint(function() 
+        {                                             
+            $('#element-to-animate-services-up-5').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+
+        $("#element-to-animate-services-up-6").waypoint(function() 
+        {                                             
+            $('#element-to-animate-services-up-6').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+
+        $("#element-to-animate-services-up-7").waypoint(function() 
+        {                                             
+            $('#element-to-animate-services-up-7').addClass('fadeInUp');                       
+        }, {offset: '100%'});    
+
+        // DOCTORS
+        $("#element-to-animate-doctors-up-1").waypoint(function() 
+        {                                             
+            $('#element-to-animate-doctors-up-1').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+
+        $("#element-to-animate-doctors-up-2").waypoint(function() 
+        {                                             
+            $('#element-to-animate-doctors-up-2').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+
+        $("#element-to-animate-doctors-up-3").waypoint(function() 
+        {                                             
+            $('#element-to-animate-doctors-up-3').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+        $("#element-to-animate-doctors-up-4").waypoint(function() 
+        {                                             
+            $('#element-to-animate-doctors-up-4').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+        $("#element-to-animate-doctors-up-5").waypoint(function() 
+        {                                             
+            $('#element-to-animate-doctors-up-5').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+        $("#element-to-animate-doctors-up-6").waypoint(function() 
+        {                                             
+            $('#element-to-animate-doctors-up-6').addClass('fadeInUp');                       
+        }, {offset: '100%'});    
+
+        $("#element-to-animate-doctors-up").waypoint(function() 
+        {                                             
+            $('#element-to-animate-doctors-up').addClass('fadeInUp');                       
+        }, {offset: '100%'});
+    }
     
     
     // Header Scroll
