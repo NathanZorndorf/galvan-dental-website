@@ -1,3 +1,8 @@
+Finished website can be viewed at:
+http://galvandentalcare.com/
+
+Designed and coded by Nathan Zorndorf, 2016.
+
 Credits :
 -------
 => Bootstrap http://getbootstrap.com/
